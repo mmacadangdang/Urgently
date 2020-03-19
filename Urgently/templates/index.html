@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Urgently - NLP for Service Requests
+  </title>
+  <!-- D3 -->
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <!-- Custom script logic -->
+  <script type="text/javascript" src="../static/js/app.js"></script>
+
+</head>
+
+<body>
+  <center>
+    <img src="../static/img/urgently_logo.png">
+    <h1>
+      Urgency Calculator
+    </h1>
+    Enter a service request to calculate whether it's urgent<br>
+    <input type="text" id="input" name="input">
+    <button onclick="calculateUrgency()">Calculate Urgency</button>
+    <div id="result">
+      <img id ="loadingImage">
+      <img id="resultImage">
+    </div>
+  </center>
+</body>
+</html>
